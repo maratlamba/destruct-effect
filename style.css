@@ -1,0 +1,41 @@
+body {background-color: #333;}
+.destruct {font-family: 'Nova Square', cursive;
+           width: 340px; height: 340px;
+           margin:100px auto;
+           color: white;
+           padding: 30px;
+           position: relative;}
+.destruct h2 { font-size: 70px;
+               color: orange;
+               margin: 0;}
+.destruct h3 {font-size: 50px;
+              color: orangered;
+              margin: 0;}
+.destruct .square {width: 400px; height: 400px;
+                   border: 20px solid rgb(86, 58, 5);
+                   position: absolute;
+                   top: 0; left: 0;
+                   filter:drop-shadow(0 0 5px #000)}
+.destruct .tl-corner {width: 250px; height: 250px;
+                      border:30px solid burlywood;
+                      border-right-color:transparent;
+                      border-bottom-color:transparent;
+                      position: absolute; top:-10px; left:-10px;
+                      filter: drop-shadow(0 0 5px #000)}
+.destruct .br-corner {width: 250px; height: 250px;
+                        border:30px solid burlywood;
+                        border-left-color:transparent;
+                        border-top-color:transparent;
+                        position: absolute; bottom:-49px; right:-49px;
+                        filter: drop-shadow(0 0 5px #000);}
+.destruct:hover{perspective: 1000px;}                        
+.destruct:hover .tl-corner{transform: translate3d(-25px,-25px, 150px); 
+                           transition: 1s;}
+.destruct:hover .br-corner{transform: translate3d(25px,25px,150px); 
+                           transition: 1s;}
+.destruct:hover .square{transform: translateZ(-300px); 
+                        transition: 1s;}
+.destruct:hover h2{transform: translate3d(-20px,-45px,100px);
+                   transition: 1s;}
+.destruct:hover h3{transform: translate3d(110px,65px,100px);
+                   transition: 1s;}
